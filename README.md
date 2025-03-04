@@ -9,20 +9,15 @@
 
 NPS is a lightweight, high-performance, powerful **intranet penetration** proxy server, with a powerful web management terminal.
 
-
 ![image](https://github.com/ehang-io/nps/blob/master/image/web.png?raw=true)
 
 ## Feature
 
-- Comprehensive protocol support, compatible with almost all commonly used protocols, such as tcp, udp, http(s), socks5, p2p, http proxy ...
 - Full platform compatibility (linux, windows, macos, Synology, etc.), support installation as a system service simply.
 - Comprehensive control, both client and server control are allowed.
-- Https integration, support to convert backend proxy and web services to https, and support multiple certificates.
 - Just simple configuration on web ui can complete most requirements.
 - Complete information display, such as traffic, system information, real-time bandwidth, client version, etc.
 - Powerful extension functions, everything is available (cache, compression, encryption, traffic limit, bandwidth limit, port reuse, etc.)
-- Domain name resolution has functions such as custom headers, 404 page configuration, host modification, site protection, URL routing, and pan-resolution.
-- Multi-user and user registration support on server.
 
 **Didn't find the feature you want? It doesn't matter, click [Enter the document](https://ehang-io.github.io/nps/) to find it!**
 
@@ -46,9 +41,7 @@ For windows, run cmd as administrator and enter the installation directory ```np
 
 - default ports
 
-The default configuration file of nps use 80，443，8080，8024 ports
-
-80 and 443 ports for host mode default ports
+The default configuration file of nps use 8080，8024 ports
 
 8080 for web management access port
 
@@ -71,7 +64,6 @@ For windows, run cmd as administrator and enter the program directory ```nps.exe
 ### Client connection
 - Click the + sign in front of the client in web management and copy the startup command.
 - Execute the startup command, Linux can be executed directly, Windows will replace ./npc with npc.exe and execute it with cmd.
-
 
 If you need to register to the system service, you can check [Register to the system service](https://ehang-io.github.io/nps/#/use?id=注册到系统服务)
 

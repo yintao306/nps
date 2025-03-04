@@ -29,37 +29,9 @@ func (s *IndexController) Tcp() {
 	s.display("index/list")
 }
 
-func (s *IndexController) Udp() {
-	s.SetInfo("udp")
-	s.SetType("udp")
-	s.display("index/list")
-}
-
-func (s *IndexController) Socks5() {
-	s.SetInfo("socks5")
-	s.SetType("socks5")
-	s.display("index/list")
-}
-
-func (s *IndexController) Http() {
-	s.SetInfo("http proxy")
-	s.SetType("httpProxy")
-	s.display("index/list")
-}
 func (s *IndexController) File() {
 	s.SetInfo("file server")
 	s.SetType("file")
-	s.display("index/list")
-}
-
-func (s *IndexController) Secret() {
-	s.SetInfo("secret")
-	s.SetType("secret")
-	s.display("index/list")
-}
-func (s *IndexController) P2p() {
-	s.SetInfo("p2p")
-	s.SetType("p2p")
 	s.display("index/list")
 }
 
