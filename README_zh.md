@@ -31,7 +31,17 @@ nps是一款轻量级、高性能、功能强大的代理服务器。
 
 ##### 服务端(nps)
 ```
-# 构建镜像
+# 方式一：从Docker Hub拉取镜像
+docker pull YT8U8/NPS
+
+# 运行容器
+docker run -d --name nps \
+    -p 8080:8080 \
+    -p 8024:8024 \
+    -v /path/to/conf:/conf \
+    YT8U8/NPS
+
+# 方式二：本地构建镜像
 docker build -t nps -f Dockerfile.nps .
 
 # 运行容器
@@ -44,7 +54,15 @@ docker run -d --name nps \
 
 ##### 客户端(npc)
 ```
-# 构建镜像
+# 方式一：从Docker Hub拉取镜像
+docker pull YT8U8/NPS
+
+# 运行容器
+docker run -d --name npc \
+    -v /path/to/conf:/conf \
+    YT8U8/NPS -server=<server_ip>:<bridge_port> -vkey=<web界面中显示的密钥>
+
+# 方式二：本地构建镜像
 docker build -t npc -f Dockerfile.npc .
 
 # 运行容器
